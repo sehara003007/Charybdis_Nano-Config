@@ -37,7 +37,7 @@
 
 // Selecting 5 Coloumn Transform  
 / {
-    chosen { zmk,matrix_transform = &five_column_transform; };
+    chosen { zmk,matrix_transform = &charybdis_5col_layout };
 };
 
 
