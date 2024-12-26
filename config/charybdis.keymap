@@ -35,9 +35,9 @@
     require-prior-idle-ms = <250>;
 };
 
-// Selecting 5 Coloumn Transform  
+// Selecting 5 Coloumn Transform  &five_column_transform 
 / {
-    chosen { zmk,matrix_transform = &five_column_transform };
+    chosen { zmk,matrix_transform = &five_column_transform; };
 };
 
 /* Combos, Behaviors, and Keymap
