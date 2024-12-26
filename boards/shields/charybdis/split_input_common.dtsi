@@ -1,12 +1,13 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 
-#define DEF 0
-#define MOUSE 1
-#define SYM 2
-#define NUM 3
-#define FN 4
-#define GENSHIN 5 
+#define BASE 0
+#define NAV_L 1
+#define SYM_L 2
+#define FUN_L 3
+#define MOU_L 4
+#define SCR_L 5
+#define SNI_L 6
 
 / {
   split_inputs {
@@ -25,26 +26,27 @@
     device = <&trackball_split>;
 
     snipe {
-      layers = <NUM>;
+      layers = <SNI_L>;
       input-processors = <&zip_xy_scaler 1 3>;
     };
 
     scroll {
-      layers = <SYM>;
+      layers = <SCR_L>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>;
     };
 
-    move {
-      layers = <DEF MOUSE>;
+   /*move {
+      layers = <BASE MOU_L>;
       input-processors = <&auto_mouse_layer MOUSE 5000>;
     };
   };
+  */
 
-  auto_mouse_layer: auto_mouse_layer {
+  /*auto_mouse_layer: auto_mouse_layer {
     compatible = "zmk,input-processor-temp-layer";
     #input-processor-cells = <2>;
     require-prior-idle-ms = <500>;
     excluded-positions = <30 31 32 16 17 18 10 11 12 13 22 23>;
   };
+  */
 };
-
