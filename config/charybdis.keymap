@@ -151,10 +151,10 @@
         SYMNUM { // Layer 2
             display-name = "Sym & Num";
             bindings = <
-  &kp GRAVE  &kp EXCL   &kp AT       &kp POUND       &kp DOLLAR    &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp SEMI
-  &kp TILDE  &kp STAR   &kp PIPE     &kp UNDER       &kp MINUS     &kp N0     &kp N4  &kp N5  &kp N6  &kp COLON
-  &trans     &kp CARET  &kp PERCENT  &kp AMPERSAND   &kp LGUI      &trans     &kp N7  &kp N8  &kp N9  &trans
-                        &trans       &kp LEFT_SHIFT  &lt 3 TAB     &trans     &trans
+  &kp LBRC   &kp AMPERSAND  &kp STAR    &kp LPAR  &kp RBRC      &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT
+  &kp COLON  &kp DOLLAR     &kp PERCENT &kp CARET &kp PLUS      &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL
+  &kp TILDE  &kp EXCL       &kp AT      &kp POUND &kp PIPE      &kp GRAVE &kp N1  &kp N2  &kp N3  &kp BSLH
+                            &kp RPAR    &kp LPAR  &kp UNDER     &kp N0    &kp MINUS
             >;
         };
 
