@@ -56,7 +56,7 @@
     behaviors {
         Shift_Enter: Shift_Enter {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_ENTER";
+            display-name = "SHIFT_ENTER";
             bindings = <&kp>, <&kp>;
             #binding-cells = <2>;
             hold-trigger-key-positions = <34>;
