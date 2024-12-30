@@ -1,3 +1,4 @@
+name: Build ZMK Firmware
 on:
   push:
     paths-ignore: # don't rebuild if only documentation has changed
