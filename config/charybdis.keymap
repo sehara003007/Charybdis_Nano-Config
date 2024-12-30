@@ -41,6 +41,7 @@
 };
 
 /* Combos, Behaviors, and Keymap
+//--------------------------------
    ╭──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────╮
       00     01     02     03     04        05     06     07     08     09 
    ├──────┼──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┼──────┼──────┤
@@ -118,62 +119,55 @@
         };
     };
 
-
-
     keymap {
         compatible = "zmk,keymap";
 
         BASE { // Layer 0
             display-name = "Base";
             bindings = <
-// ╭──────────────────┬────────────────────┬─────────────────┬─────────────────┬──────────────────╮  ╭────────────────────┬─────────────────┬───────────────┬───────────┬────────────────╮
-     &kp Q              &kp W                &kp F             &kp P             &kp B                 &kp J                &kp L             &kp U           &kp Y       &kp APOS
-// ├──────────────────┼────────────────────┼─────────────────┼─────────────────┼──────────────────┤  ├────────────────────┼─────────────────┼───────────────┼───────────┼────────────────┤
-     &mt LEFT_SHIFT A   &mt LEFT_CONTROL R   &mt LEFT_ALT S    &mt LEFT_GUI T    &kp G                 &kp M                &kp N             &kp E           &kp I       &kp O
-// ├──────────────────┼────────────────────┼─────────────────┼─────────────────┼──────────────────┤  ├────────────────────┼─────────────────┼───────────────┼───────────┼────────────────┤
-     &lt MOU_L Z              &kp X                &kp C             &kp D             &kp V                 &kp K                &kp H             &kp COMMA       &kp DOT     &kp SLASH
-// ╰──────────────────┴────────────────────┼─────────────────┼─────────────────┼──────────────────┤  ├────────────────────┼─────────────────────────────────┼───────────┴────────────────╯
-                                             &mo SCR_L         &kp SPACE         &lt NAV_L TAB         &lt SYM_L BACKSPACE   &Shift_Enter RIGHT_SHIFT ENTER
-                                        // ╰─────────────────┴─────────────────┴──────────────────╯  ╰────────────────────┴─────────────────────────────────╯
+        &kp Q              &kp W                &kp F             &kp P             &kp B                 &kp J                &kp L             &kp U           &kp Y       &kp APOS
+        &mt LEFT_SHIFT A   &mt LEFT_CONTROL R   &mt LEFT_ALT S    &mt LEFT_GUI T    &kp G                 &kp M                &kp N             &kp E           &kp I       &kp O
+        &lt MOU_L Z        &kp X                &kp C             &kp D             &kp V                 &kp K                &kp H             &kp COMMA       &kp DOT     &kp SLASH
+                                                &mo SCR_L         &kp SPACE         &lt NAV_L TAB         &lt SYM_L BACKSPACE  &Shift_Enter RIGHT_SHIFT ENTER
             >;
         };
 
         NAV { // Layer 1
             display-name = "Nav";
             bindings = <
-  &kp LA(F4)  &kp LG(UP_ARROW)  &kp LG(LEFT)     &kp LG(RIGHT)        &kp LC(W)    &kp PRINTSCREEN  &kp BACKSPACE     &kp ENTER          &kp DELETE    &trans
-  &kp LC(Z)   &kp RC(RS(T))     &kp LS(LC(TAB))  &kp LC(TAB)          &kp LC(A)    &kp ENTER        &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT
-  &kp LC(Z)   &kp LC(X)         &kp LC(C)        &mt LC(LS(V)) LC(V)  &kp LC(Y)    &trans           &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &trans        &trans
-                                &trans           &trans               &trans       &lt 3 BACKSPACE  &kp LSHFT
+        &kp LA(F4)  &kp LG(UP_ARROW)  &kp LG(LEFT)     &kp LG(RIGHT)        &kp LC(W)    &kp PRINTSCREEN  &kp BACKSPACE     &kp ENTER          &kp DELETE    &trans
+        &kp LC(Z)   &kp RC(RS(T))     &kp LS(LC(TAB))  &kp LC(TAB)          &kp LC(A)    &kp ENTER        &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT
+        &kp LC(Z)   &kp LC(X)         &kp LC(C)        &mt LC(LS(V)) LC(V)  &kp LC(Y)    &trans           &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &trans        &trans
+                                    &trans           &trans               &trans       &lt 3 BACKSPACE  &kp LSHFT
             >;
         };
 
         SYMNUM { // Layer 2
             display-name = "Sym & Num";
             bindings = <
-  &kp LBRC   &kp AMPERSAND  &kp STAR    &kp LPAR  &kp RBRC      &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT
-  &kp COLON  &kp DOLLAR     &kp PERCENT &kp CARET &kp PLUS      &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL
-  &kp TILDE  &kp EXCL       &kp AT      &kp POUND &kp PIPE      &kp GRAVE &kp N1  &kp N2  &kp N3  &kp BSLH
-                            &kp RPAR    &kp LPAR  &kp UNDER     &kp N0    &kp MINUS
+        &kp LBRC   &kp AMPERSAND  &kp STAR    &kp LPAR  &kp RBRC      &kp MINUS &kp N7  &kp N8  &kp N9  &kp N0
+        &kp COLON  &kp DOLLAR     &kp PERCENT &kp CARET &kp PLUS      &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL
+        &kp TILDE  &kp EXCL       &kp AT      &kp POUND &kp PIPE      &kp GRAVE &kp N1  &kp N2  &kp N3  &kp BSLH
+                            &kp RPAR    &kp LPAR  &kp UNDER     &trans    &trans
             >;
         };
 
         FUN { // Layer 3
             display-name = "Fun";
             bindings = <
-  &kp ESC  &kp F1  &kp F2  &kp F3  &kp F10    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4
-  &kp F12  &kp F4  &kp F5  &kp F6  &kp F11    &out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bt BT_CLR
-  &trans   &kp F7  &kp F8  &kp F9  &kp F12    &trans        &trans            &trans             &trans           &trans
-                   &trans  &trans  &trans     &trans        &trans
+        &kp ESC  &kp F1  &kp F2  &kp F3  &kp F10    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4
+        &kp F12  &kp F4  &kp F5  &kp F6  &kp F11    &out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bt BT_CLR
+        &trans   &kp F7  &kp F8  &kp F9  &kp F12    &trans        &trans            &trans             &trans           &trans
+                    &trans  &trans  &trans     &trans        &trans
             >;
         };
 
         MOUSE { // Layer 4
             display-name = "Mouse";
             bindings = <
-  &trans  &trans    &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
-  &trans  &trans    &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
-  &trans  &mo SCR_L &mo SNI_L &trans   &trans    &trans   &trans  &trans  &trans  &trans
+        &trans  &trans    &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
+        &trans  &trans    &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
+        &trans  &mo SCR_L &mo SNI_L &trans   &trans    &trans   &trans  &trans  &trans  &trans
                     &mkp MB1  &mkp MB2 &trans    &mkp MB1 &mkp MB2
             >;
         };
@@ -181,10 +175,19 @@
         SCROLL { // Layer 5
             display-name = "Scroll";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+        SNIPE { // Layer 6
+            display-name = "Snipe";
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
