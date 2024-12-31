@@ -134,10 +134,10 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-            &kp LA(F4)  &kp LG(UP_ARROW)  &kp LG(LEFT)     &kp LG(RIGHT)        &kp LC(W)    &kp PRINTSCREEN  &kp BACKSPACE     &kp ENTER          &kp DELETE    &trans
-            &kp LC(Z)   &kp RC(RS(T))     &kp LS(LC(TAB))  &kp LC(TAB)          &kp LC(A)    &kp ENTER        &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT
-            &kp LC(Z)   &kp LC(X)         &kp LC(C)        &mt LC(LS(V)) LC(V)  &kp LC(Y)    &trans           &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &trans        &trans
-                                            &trans         &trans               &trans             &lt FUN BACKSPACE  &kp LSHFT
+            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)           &kp LG(N5)   &kp PRINTSCREEN  &kp BACKSPACE     &kp ENTER          &kp DELETE    &trans
+            &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)           &kp LG(N0)   &kp ENTER        &kp LEFT          &kp DOWN           &kp UP_ARROW  &kp RIGHT
+            &kp LC(Z)   &kp LC(X)   &kp LC(C)   &mt LC(LS(V)) LC(V)  &kp LC(Y)    &trans           &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &trans        &trans
+                                            &trans         &trans    &trans       &lt FUN BACKSPACE  &kp LSHFT
             >;
         };
 
