@@ -1,13 +1,13 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 
-#define BASE 0
-#define NAV_L 1
-#define SYM_L 2
-#define FUN_L 3
-#define MOU_L 4
-#define SCR_L 5
-#define SNI_L 6
+#define DEF 0
+#define NAV 1
+#define SMN 2
+#define FUN 3
+#define MOU 4
+#define SCR 5
+#define SNI 6
 
 / {
   split_inputs {
@@ -26,18 +26,18 @@
     device = <&trackball_split>;
 
     snipe {
-      layers = <SNI_L>;
+      layers = <SNI>;
       input-processors = <&zip_xy_scaler 1 3>;
     };
 
     scroll {
-      layers = <SCR_L>;
+      layers = <SCR>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>;
     };
 
     move {
-      layers = <BASE MOU_L>;
-      input-processors = <&auto_mouse_layer MOU_L 5000>;
+      layers = <DEF MOU>;
+      input-processors = <&auto_mouse_layer MOU 5000>;
     };
   };
 
