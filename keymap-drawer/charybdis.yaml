@@ -20,7 +20,7 @@ layers:
   - E
   - I
   - O
-  - '&mo 4 Z'
+  - Z
   - X
   - C
   - D
@@ -30,7 +30,7 @@ layers:
   - ','
   - .
   - /
-  - SCR
+  - MOU
   - SPACE
   - {t: TAB, h: NAV}
   - {t: BACKSPACE, h: SNM}
@@ -174,7 +174,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
+  - {t: '&mkp MB1', type: held}
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -201,7 +201,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,7 +246,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
