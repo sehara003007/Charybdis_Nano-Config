@@ -164,10 +164,10 @@
         mouse_layer {
             display-name = "MOU";
             bindings = <
-            &trans  &trans    &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
-            &trans  &trans    &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
-            &trans  &mo SCR   &mo SNI   &trans   &trans    &trans   &trans  &trans  &trans  &trans
-                    &mkp MB1  &mkp MB2  &trans   &mkp MB1  &mkp MB2
+            &trans  &trans    &trans    &trans   &trans    &trans   &trans    &trans   &trans  &trans
+            &trans  &trans    &trans    &trans   &trans    &trans   &mkp MB1  &mkp MB2 &trans  &trans
+            &trans  &mo SCR   &mo SNI   &trans   &trans    &trans   &trans    &trans   &trans  &trans
+                                &trans    &trans    &trans   &trans    &trans
             >;
         };
 
