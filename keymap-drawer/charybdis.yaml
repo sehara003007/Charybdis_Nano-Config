@@ -36,21 +36,21 @@ layers:
   - {t: BACKSPACE, h: SNM}
   - {t: ENTER, h: RIGHT SHIFT}
   NAV:
-  - Alt+ F4
-  - Gui+ UP ARROW
-  - Gui+ LEFT
-  - Gui+ RIGHT
-  - Ctl+ W
+  - Gui+ 1
+  - Gui+ 2
+  - Gui+ 3
+  - Gui+ 4
+  - Gui+ 5
   - PRINTSCREEN
   - BACKSPACE
   - ENTER
   - DELETE
   - {t: ▽, type: trans}
-  - Ctl+ Z
-  - Ctl+Sft+ T
-  - Sft+Ctl+ TAB
-  - Ctl+ TAB
-  - Ctl+ A
+  - Gui+ 6
+  - Gui+ 7
+  - Gui+ 8
+  - Gui+ 9
+  - Gui+ 0
   - ENTER
   - LEFT
   - DOWN
@@ -252,6 +252,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
+- p: [32, 33]
+  k: FUN
 - p: [16, 17]
   k: '&mkp LCLK'
 - p: [17, 18]
