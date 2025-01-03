@@ -2,12 +2,7 @@
 #include "charybdis_3610.dtsi"
 #include "split_input_common.dtsi"
 
-// The matrix transform is 6 columns over because the left half is 6 columns wide.
 &default_transform {
-	col-offset = <6>;
-};
-
-&five_column_transform {
 	col-offset = <5>;
 };
 
@@ -35,6 +30,7 @@
     status = "okay";
 };
 
+// https://github.com/badjeff/zmk-pmw3610-driver
 / {
   trackball_listener {
     status = "okay";
